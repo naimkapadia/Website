@@ -80,32 +80,40 @@
 							</article>
 
 						
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact us</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								<ul class="icons">
-								</ul>
-							</article>
+				<!-- Contact -->
+<article id="contact">
+  <h2 class="major">Contact Us</h2>
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <div class="fields">
+      <div class="field half">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required />
+      </div>
+      <div class="field half">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="4" required></textarea>
+      </div>
+    </div>
+    <ul class="actions">
+      <li><input type="submit" value="Send Message" class="primary" /></li>
+      <li><input type="reset" value="Reset" /></li>
+    </ul>
+  </form>
+
+  <p style="margin-top:1em; font-size:0.9em; opacity:0.8;">
+    Your message will be securely sent to our team via Formspree.
+  </p>
+
+  <ul class="icons">
+    <li><a href="https://linkedin.com/company/codeform3d" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+    <li><a href="mailto:hello@codeform3d.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+  </ul>
+</article>
+
 
 						<!-- Elements -->
 							<article id="elements">
@@ -367,6 +375,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 	</body>
 </html>
+
 
 
 
